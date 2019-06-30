@@ -1,0 +1,9 @@
+test_get001_1 (w_1.TestCase) ... ok
+test_get001_2 (w_1.TestCase) ... ok
+test_get001_3 (w_1.TestCase) ... ok
+test_get001_4 (w_1.TestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.472s
+
+OK
