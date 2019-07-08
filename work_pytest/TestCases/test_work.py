@@ -13,6 +13,7 @@ import  time
 
 
 @pytest.mark.usefixtures("open_url")
+@pytest.mark.usefixtures("refresh")
   # 使用函数名称为open_url的fixture
 class TestWork:
 

@@ -57,6 +57,7 @@ class BasePage:
         except:
             # 日志
             logger.exception("查找元素失败")
+
             # 截图
             self.save_web_screenshot(img_doc)
             raise

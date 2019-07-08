@@ -1,3 +1,3 @@
 import pytest
 
-pytest.main(["-v","-m","demo","--alluredir=../OutPuts/allure"])
+pytest.main(["-v","-m","smoke","--alluredir=../OutPuts/allure"])

@@ -48,11 +48,27 @@ def open_url():
     # 后置
     driver.quit()
 
+@pytest.fixture(scope="class")
+def open_url1():
+    # 前置
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.get(cd.base_url)
+    # LoginPage(driver).login(ld.login_data["phone"],ld.login_data["pwd"])
+    yield driver  # yield之前代码是前置，之后的代码就是后置。
+    # 后置
+    driver.quit()
+
+@pytest.fixture
+def refresh(open_url1):
+    yield
+    open_url1.refresh()
 
 
 
 
-# 在测试用例中使用fixture
+
+    # 在测试用例中使用fixture
 # @pytest.mark.usefixtures("函数名称")
 # @pytest.fixture(scope="class")
 # def login_web(open_url):

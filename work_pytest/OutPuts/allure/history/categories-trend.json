@@ -1,6 +1,0 @@
-[ {
-  "buildOrder" : 7,
-  "reportUrl" : "http://192.168.100.106:8080/job/web_pytest/7/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-} ]
