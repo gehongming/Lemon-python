@@ -145,9 +145,10 @@ class BasePage:
             logger.exception("网页截屏失败！")
 
 
-# windows切换
+    # windows切换
+    def check_window(self,loc,img_loc):
 
-# iframe切换
+    # iframe切换
     def check_iframe(self,loc,webelement,img_doc):
         """
                        实现了，操作。等待ifram弹框出现。进入下拉框
@@ -210,9 +211,11 @@ class BasePage:
             self.save_web_screenshot(img_doc)
             raise
         #处理alert弹框
-        def alert_handler(self,action="accept"):
+        def alert_handler(self,img_loc,action="accept"):
             #等待alter弹框出现
+
             WebDriverWait(self.driver,10,1).until(EC.alert_is_present())
+            logger.info("出现{}alter弹框}".format(img_loc))
             alert=self.driver.switch_to.alter
             message=alert.text
             if action=="accept":
