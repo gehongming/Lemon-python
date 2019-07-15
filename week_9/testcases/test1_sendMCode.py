@@ -37,7 +37,7 @@ class RegisterCase(unittest.TestCase):
             if check_sql is not None:
                 sql = eval(check_sql)['sql1']
                 Fverify_code = self.mysql.fetch_one(sql)
-                print(Fverify_code['Fverify_code'])
+                logger.info('验证码是：{}'.format(Fverify_code[2]))
         except AssertionError as e:
             result = 'FALSE'
             logger.error("报错了，{0}".format(e))

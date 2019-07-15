@@ -14,7 +14,7 @@ import time
 # 3、toast获取
 # 4、列表滑动
 #
-# 提交内容：1、代码；2、代码运行结果截图
+# 提交内容：1、代码；2、代码运行结果截图/,
 # #启动参数
 desired_caps = {}
 desired_caps["automationName"] = "UiAutomator2"
