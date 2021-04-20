@@ -17,7 +17,7 @@ openpyxl==2.6.1
 pluggy==0.11.0
 post==2018.11.20
 public==2018.11.20
-py==1.8.0
+py==1.10.0
 PyMySQL==0.9.3
 pypiwin32==223
 pytest==4.5.0
